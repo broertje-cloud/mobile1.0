@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobile1._0.Page1"
+             BackgroundImage="achtergrond.jpg" >
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  >
+                <Image Source="logo_200x200.png" />
+                <Label Text="Notification" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+                <Image Source="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

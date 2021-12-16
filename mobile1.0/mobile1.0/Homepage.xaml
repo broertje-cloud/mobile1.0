@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:mobile1._0"
+            x:Class="mobile1._0.Homepage" 
+            BackgroundImage="achtergrond.jpg " >
+
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text ="Logout" Clicked="ToolbarItem_Clicked_1"/>
+        <ToolbarItem x:Name="HelpToolbarItem" Text="Help" Clicked="HelpToolbarItem_Clicked" />
+    </TabbedPage.ToolbarItems>
+    
+    
+    <local:Page1 Title="home"/>
+    <local:Page2 Title="find match"/>
+    <local:Page3 Title="account"/>
+    <local:Page4 Title="settings"/>
+
+
+</TabbedPage>

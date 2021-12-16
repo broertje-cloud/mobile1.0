@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobile1._0.Page2">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  >
+                    <Image Source="logo_200x200.png" />
+                    <Label Text="people that you may like" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+                    <Grid Margin="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image x:Name="personOneImage"
+                               Source="meisje1.jpg"/>
+                            <Entry x:Name="personONeEntry"
+                               Placeholder="Name"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Image x:Name="personTwoImage"
+                               Source="jonge1.jpg"/>
+                            <Entry x:Name="personTwoEntry"
+                               Placeholder="Name"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Image x:Name="personThreeImage"
+                               Source="meisje2.jpg"/>
+                            <Entry x:Name="personThreeEntry"
+                               Placeholder="Name"/>
+                        </StackLayout>
+                    </Grid>
+                    <Button x:Name="LikeButton" Text="like" Clicked="LikeButton_Clicked_1" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                    <Button x:Name="ChatButtonButton" Text="chat" Clicked="ChatButtonButton_Clicked_1" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

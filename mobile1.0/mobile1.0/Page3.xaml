@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobile1._0.Page3">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  >
+                <Image Source="logo_200x200.png" />
+                <Label Text="this is your account" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+                <Label Text="userName" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+                <Button x:Name="EditButton" Text="edit" Clicked="EditButton_Clicked_1" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

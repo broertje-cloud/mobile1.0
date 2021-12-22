@@ -34,8 +34,41 @@ namespace mobile1._0
             catch (Exception)
             {
 
-            }
+            }   
+
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            Accelerometer.ShakeDetected += Accelerometer_ShakeDetected;
+
+            Accelerometer.Start(SensorSpeed.Game);
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            Connectivity.ConnectivityChanged -= Connectivity_ConnectivityChanged;
+            Accelerometer.ShakeDetected -= Accelerometer_ShakeDetected;
+            Accelerometer.Stop();
+
+        }
+
+        private void Accelerometer_ShakeDetected(object sender, EventArgs e)
+        {
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                EntryNumber.Text = string.Empty;
+                EntryMessage.Text = string.Empty;
+            });
+        }
+
+        private void Connectivity_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
+
 }

@@ -21,4 +21,5 @@ public partial class Page3 : ContentPage
             Navigation.PushAsync(new Page8());
         }
     }
+
 }

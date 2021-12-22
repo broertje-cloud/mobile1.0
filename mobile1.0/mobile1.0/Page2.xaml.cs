@@ -23,9 +23,35 @@ public partial class Page2 : ContentPage
             Navigation.PushAsync(new Page7());
         }
 
-        private void LikeButton_Clicked_1(object sender, EventArgs e)
+
+        private void PersonONeEntry_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page6());
+        }
+
+        private void PersonTwoEntry_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page6());
+        }
+
+        private void PersonThreeEntry_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page6());
+        }
+
+        private void PersonThreeEntryQ_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page7());
+        }
+
+        private void PersonTwoEntryQ_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page7());
+        }
+
+        private void PersonONeEntryQ_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page7());
         }
     }
 }

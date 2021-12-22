@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mobile1._0.MainPage"
+             xmlns:local="clr-namespace:mobile1._0"
              BackgroundImage="achtergrond.jpg">
     <ScrollView>
         <StackLayout>
@@ -32,8 +33,8 @@
                                             <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                                 <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
                                             </Frame>
-                                            <Label x:Name="usernameLabel" Text="Geef hier je naam in:"/>
-                                            <Entry x:Name="usernameEntry"/>
+                                            
+                                            <Entry x:Name="usernameEntry" WidthRequest="150" Placeholder="naam"/>
 
 
                                         </StackLayout>
@@ -44,11 +45,31 @@
                                             <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                                 <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
                                             </Frame>
-                                            <Label x:Name="passwoordLabel" Text="Geef hier je passwoord in:"/>
-                                            <Entry x:Name="passwoordEntry"/>
+                                            
 
+                                            <StackLayout VerticalOptions="Center"
+                                                 Padding="20">
+                                                <Grid>
+                                                    <Entry x:Name="passwoordEntry" WidthRequest="150" Placeholder="Password"
+                                                     IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"/>
+                                                    <ImageButton VerticalOptions="Center"
+                                                         Margin="0,0,10,0"
+                                                         HeightRequest="90"
+                                                         HorizontalOptions="End"
+                                                         Source="eyeclosed.jpg">
+                                                        <ImageButton.Triggers>
+                                                            <EventTrigger Event="Clicked">
+                                                                <local:ShowPasswordTriggerAction ShowIcon="eyeopen.png"
+                                                                    HideIcon="eyeclosed.jpg"
+                                                                    x:Name="ShowPasswordActualTrigger"/>
+                                                            </EventTrigger>
+                                                        </ImageButton.Triggers>
+                                                    </ImageButton>
+                                                </Grid>
+                                            </StackLayout>
 
-                                        </StackLayout>
+                                        
+                                </StackLayout>
                                     </Frame>
 
                                     <StackLayout  Orientation="Horizontal">

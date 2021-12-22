@@ -23,26 +23,38 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <StackLayout Grid.Row="0" Grid.Column="0">
-                            <Image x:Name="personOneImage"
+                            <Image x:Name="PersonOneImage"
                                Source="meisje1.jpg"/>
-                            <Entry x:Name="personONeEntry"
-                               Placeholder="Name"/>
+                            <Button x:Name="PersonONeEntry"
+                               Text="msg"
+                                    Clicked="PersonONeEntry_Clicked"
+                                    />
+                            <Button x:Name="PersonONeEntryQ"
+                               Text="Question"
+                                    Clicked="PersonONeEntryQ_Clicked"
+                                    />
                         </StackLayout>
                         <StackLayout Grid.Row="0" Grid.Column="1">
-                            <Image x:Name="personTwoImage"
+                            <Image x:Name="PersonTwoImage"
                                Source="jonge1.jpg"/>
-                            <Entry x:Name="personTwoEntry"
-                               Placeholder="Name"/>
+                            <Button x:Name="PersonTwoEntry"
+                               Text="msg"
+                                    Clicked="PersonTwoEntry_Clicked"/>
+                            <Button x:Name="PersonTwoEntryQ"
+                               Text="Question"
+                                    Clicked="PersonTwoEntryQ_Clicked"/>
                         </StackLayout>
                         <StackLayout Grid.Row="0" Grid.Column="2">
-                            <Image x:Name="personThreeImage"
+                            <Image x:Name="PersonThreeImage"
                                Source="meisje2.jpg"/>
-                            <Entry x:Name="personThreeEntry"
-                               Placeholder="Name"/>
+                            <Button x:Name="PersonThreeEntry"
+                               Text="msg"
+                                    Clicked="PersonThreeEntry_Clicked"/>
+                            <Button x:Name="PersonThreeEntryQ"
+                               Text="Question"
+                                    Clicked="PersonThreeEntryQ_Clicked"/>
                         </StackLayout>
                     </Grid>
-                    <Button x:Name="LikeButton" Text="like" Clicked="LikeButton_Clicked_1" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
-                    <Button x:Name="ChatButtonButton" Text="chat" Clicked="ChatButtonButton_Clicked_1" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

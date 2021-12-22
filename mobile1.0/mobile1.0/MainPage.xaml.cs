@@ -6,8 +6,34 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+
 namespace mobile1._0
 {
+
+    public class ShowPasswordTriggerAction : TriggerAction<ImageButton>, INotifyPropertyChanged
+    {
+        public string ShowIcon { get; set; }
+        public string HideIcon { get; set; }
+        bool _hidePassword = true;
+        public bool HidePassword
+        {
+            set
+            {
+                if (_hidePassword != value)
+                {
+                    _hidePassword = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(HidePassword)));
+                }
+            }
+            get => _hidePassword;
+        }
+        protected override void Invoke(ImageButton sender)
+        {
+            sender.Source = HidePassword ? ShowIcon : HideIcon;
+            HidePassword = !HidePassword;
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+    }
     public partial class MainPage : ContentPage
     {
         public MainPage()
@@ -19,6 +45,9 @@ namespace mobile1._0
         {
             Navigation.PushAsync(new Page5());
         }
+
+       
+
 
         private void LoginButton_Clicked_1(object sender, EventArgs e)
         {

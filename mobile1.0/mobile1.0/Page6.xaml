@@ -10,7 +10,6 @@
             <Entry Text="" Placeholder="Phone Number" x:Name="EntryNumber"/>
             <Entry Text="" Placeholder="Message" x:Name="EntryMessage"/>
             <Button Text="Send" Clicked="Button_Clicked"/>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

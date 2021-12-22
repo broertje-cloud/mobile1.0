@@ -3,15 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mobile1._0.Page4">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  >
-                <Image Source="logo_200x200.png" />
-                <Label x:Name="ChangeusernameLabel" Text="Geef hier je nieuwe naam in:"/>
-                <Entry x:Name="usernameEntry" Placeholder="Naam"/>
-                <Label x:Name="ChangepasswoordLabel" Text="Geef hier je nieuwe passwoord in:"/>
-                <Entry x:Name="passwoordEntry" Placeholder="Passwoord"/>
-                <Button x:Name="LoginButton" Text="Opniew Inloggen" Clicked="LoginButton_Clicked" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  >
+                    <Image Source="logo_200x200.png" />
+                    
+                    <Label x:Name="ChangeusernameLabel" Text="Geef hier je nieuwe naam in:"/>
+                    <Entry x:Name="usernameEntry" Placeholder="Naam"/>
+                    <Label x:Name="ChangepasswoordLabel" Text="Geef hier je nieuwe passwoord in:"/>
+                    <Entry x:Name="passwoordEntry" Placeholder="Passwoord"/>
+                    <Button x:Name="LoginButton" Text="Opniew Inloggen" Clicked="LoginButton_Clicked" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Padding="12,0,12,12" Spacing="6">
+                    <Slider Minimum="0" Maximum="5000" Value="100" x:Name="SliderTime"/>
+                    <Button Text="Vibrate" x:Name="ButtonVibrate" Clicked="ButtonVibrate_Clicked"/>
+                    <Button Text="Cancel" x:Name="ButtonCancel" Clicked="ButtonCancel_Clicked"/>
+
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

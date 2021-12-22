@@ -9,13 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace mobile1._0
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-public partial class Page6 : ContentPage
-{
-    public Page6()
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Page6 : ContentPage
     {
-        InitializeComponent();
-    }
+        public Page6()
+        {
+            InitializeComponent();
+        }
 
 
 
@@ -36,5 +36,6 @@ public partial class Page6 : ContentPage
 
             }
         }
+
     }
 }

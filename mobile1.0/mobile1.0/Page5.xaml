@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="mobile1._0.Page5">
+             x:Class="mobile1._0.Page5"
+             BackgroundImage="relaxachtergrond.jpg">
 
         <ContentPage.Content>
         <ScrollView>
@@ -17,7 +18,7 @@
                 <StackLayout>
 
                     <Grid>
-                        <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+                        <StackLayout Padding="0" Margin="10,0,10,100" HorizontalOptions="FillAndExpand">
                             <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
 
                                 <StackLayout>
@@ -34,8 +35,7 @@
                                                 <Frame BackgroundColor="#2196F3" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                                     <Image Source="" Aspect="AspectFill" Margin="0"/>
                                                 </Frame>
-                                                <Label x:Name="usernameLabel" Text="Geef hier je naam in:"/>
-                                                <Entry x:Name="usernameEntry"/>
+                                                <Entry x:Name="usernameEntry" WidthRequest="150" Placeholder="naam"/>
 
 
                                             </StackLayout>
@@ -46,8 +46,8 @@
                                                 <Frame BackgroundColor="#2196F3" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                                     <Image Source="" Aspect="AspectFill" Margin="0"/>
                                                 </Frame>
-                                                <Label x:Name="lastnameLabel" Text="Geef hier je achternaam in:"/>
-                                                <Entry x:Name="lastnameEntry"/>
+                                                <Entry x:Name="lastnameEntry" WidthRequest="150" Placeholder="Lastname"/>
+                                                
 
 
                                             </StackLayout>
@@ -58,8 +58,8 @@
                                                 <Frame BackgroundColor="#2196F3" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                                     <Image Source="" Aspect="AspectFill" Margin="0"/>
                                                 </Frame>
-                                                <Label x:Name="emailLabel" Text="Geef hier je email-adress in:"/>
-                                                <Entry x:Name="emailEntry"/>
+                                                <Entry x:Name="emailEntry" WidthRequest="150" Placeholder="Email"/>
+                                                
 
 
                                             </StackLayout>
@@ -70,8 +70,8 @@
                                                 <Frame BackgroundColor="#2196F3" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                                     <Image Source="" Aspect="AspectFill" Margin="0"/>
                                                 </Frame>
-                                                <Label x:Name="passwoordLabel" Text="Geef hier je passwoord in:"/>
-                                                <Entry x:Name="passwoordEntry"/>
+                                                <Entry x:Name="passwoordEntry" WidthRequest="150" Placeholder="Passwoord"/>
+                                                
 
 
                                             </StackLayout>
@@ -82,8 +82,8 @@
                                                 <Frame BackgroundColor="#2196F3" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                                                     <Image Source="" Aspect="AspectFill" Margin="0"/>
                                                 </Frame>
-                                                <Label x:Name="confirmPasswoordLabel" Text="Herhaal je wachtwoord:"/>
-                                                <Entry x:Name="confirmPasswoordEntry"/>
+                                                <Entry x:Name="confirmPasswoordEntry" WidthRequest="150" Placeholder="ConfurmPasswoord"/>
+                                                
 
 
                                             </StackLayout>

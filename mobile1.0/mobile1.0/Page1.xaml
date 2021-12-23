@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mobile1._0.Page1"
-             BackgroundImage="achtergrond.jpg" >
+             BackgroundImage="relaxachtergrond.jpg" >
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  >
